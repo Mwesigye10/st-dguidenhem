@@ -1,0 +1,129 @@
+<!doctype html>
+<html lang="sv">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>StödGuiden – för unga vuxna</title>
+<meta name="description" content="StödGuiden – en enkel och trygg app för unga vuxna. Snabblänkar, tips och akutinfo på ett ställe.">
+<style>
+:root{ --bg:#0e2f2c; --card:#123a36; --ink:#eafff6; --muted:#bfe7d8; --brand:#9ee6c9; --accent:#7fdcc0; --line:#1d5f58; }
+*{box-sizing:border-box}
+body{margin:0;font-family:system-ui,-apple-system,Segoe UI,Roboto,Inter,Arial;background:var(--bg);color:var(--ink)}
+.wrap{max-width:980px;margin:0 auto;padding:20px}
+.header{display:flex;align-items:center;gap:12px;margin:4px 0 14px}
+.logo{width:60px;height:60px;aspect-ratio:1/1;border-radius:999px;display:grid;place-items:center;flex:0 0 auto;background:linear-gradient(140deg,#134542,#0a2a27);box-shadow:0 8px 20px rgba(0,0,0,.25),inset 0 0 0 2px var(--line)}
+.logo span{font-weight:800;letter-spacing:.4px;color:#d9fff1}
+h1{margin:0;font-size:2rem;line-height:1.1}
+.lead{color:var(--muted);margin:.35rem 0 1rem}
+.actions{display:flex;flex-wrap:wrap;gap:10px;margin:.25rem 0 1.25rem}
+.btn{display:inline-flex;align-items:center;gap:.6rem;padding:.85rem 1.05rem;border-radius:14px;text-decoration:none;font-weight:700;border:1px solid #2a7a72;box-shadow:0 8px 20px rgba(0,0,0,.15)}
+.btn.primary{background:#1a5e56;color:var(--ink)}
+.btn.ghost{background:transparent;color:var(--brand);border-color:var(--line)}
+.card{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px 20px;margin:12px 0;box-shadow:0 8px 24px rgba(0,0,0,.2)}
+.card h2{font-size:1.25rem;margin:.2rem 0 .7rem;color:var(--brand)}
+ul{margin:.25rem 0 .25rem 1.1rem;padding:0}
+.small{font-size:.92rem;color:var(--muted)}
+.grid{display:grid;gap:14px}
+@media(min-width:760px){.grid{grid-template-columns:1fr 1fr}}
+.footer{margin-top:22px;color:var(--muted);font-size:.92rem}
+hr{border:0;border-top:1px solid #1b4c47;margin:14px 0}
+.badge{display:inline-block;background:#154944;color:var(--muted);padding:.25rem .5rem;border-radius:999px;border:1px solid #1e5f58;font-size:.85rem}
+.qrbox{text-align:center}
+.qrbox img{max-width:320px;width:90%;height:auto;border-radius:12px;border:1px solid #245b54;box-shadow:0 8px 24px rgba(0,0,0,.25);background:white;padding:10px}
+.qrbox p{color:var(--muted);margin-top:.5rem}
+
+.contact a, .qrbox a { color: var(--brand); font-weight: 800; text-decoration: underline; }
+
+</style>
+</head>
+<body>
+  <div class="wrap">
+    <header class="header">
+      <div class="logo" aria-hidden="true"><span>SG</span></div>
+      <div>
+        <h1>StödGuiden – för unga vuxna</h1>
+        <p class="lead">En enkel och trygg app där du snabbt hittar rätt stöd, tips och hjälp på ett ställe.</p>
+        <div class="actions">
+          <a class="btn primary" href="https://mwesigye10.github.io/st-dguiden/" target="_blank" rel="noopener">Öppna prototypen</a>
+        </div>
+        <p class="small">Fungerar på mobil, surfplatta och dator. Spara på hemskärmen för app‑känsla.</p>
+      </div>
+    </header>
+
+    <section class="card">
+      <h2>Varför StödGuiden?</h2>
+      <p>Unga vuxna möter många olika sidor och telefonnummer. Det är lätt att tappa bort sig. StödGuiden samlar <strong>trygga länkar</strong>, <strong>snabba svar</strong> och <strong>akutinfo</strong> – så att man hittar rätt första gången.</p>
+      <ul>
+        <li><strong>Snabbt:</strong> 1177, Försäkringskassan, Arbetsförmedlingen, kommunen – på ett ställe.</li>
+        <li><strong>Tydligt:</strong> Korta rubriker, blå länkar, “112/1177” alltid synligt.</li>
+        <li><strong>Tryggt:</strong> Ingen inloggning. Ingen lagring av persondata.</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Så funkar det</h2>
+      <ul>
+        <li><strong>Snabblänkar</strong> till de viktigaste tjänsterna.</li>
+        <li><strong>Sök / Fråga StödGuiden</strong> – skriv en fråga och få förslag till rätt kategori.</li>
+        <li><strong>Kategorier</strong> som Vardag, Ekonomi, Studier, Hälsa m.fl.</li>
+        <li><strong>Kommunens nyheter</strong> – lokala tider, aktiviteter, påminnelser.</li>
+        <li><strong>Akut & 1177</strong> – fasta knappar längst ned.</li>
+      </ul>
+    </section>
+
+    <section class="grid">
+      <div class="card">
+        <span class="badge">För kommunen</span>
+        <h2>Enkelt att komma igång</h2>
+        <ul>
+          <li>Prototypen är en enda HTML‑fil (lätt att dela och uppdatera).</li>
+          <li>Kan lokalanpassas med kommunens egna länkar och nyheter.</li>
+          <li>Kan köras som lätt PWA eller läggas på kommunens webb.</li>
+          <li>Integritet: inga personuppgifter lagras, bara säkra, öppna länkar.</li>
+        </ul>
+      </div>
+      <div class="card">
+        <span class="badge">För unga vuxna</span>
+        <h2>Snabbt & tydligt</h2>
+        <ul>
+          <li>Hitta rätt nummer och länk direkt.</li>
+          <li>Få enkla tips om vardag, ekonomi och studier.</li>
+          <li><strong>Alltid 112 vid akuta situationer</strong> – annars 1177 för råd.</li>
+        </ul>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>Integritet & tillgänglighet</h2>
+      <ul>
+        <li><strong>Integritet:</strong> Ingen inloggning. Ingen spårning. Länkar går direkt till myndigheter.</li>
+        <li><strong>Tillgänglighet:</strong> Tydliga kontraster, stora tryckytor, fungerar även med minskade animationer.</li>
+      </ul>
+      <p class="small">Banner i appens sidfot: “StödGuiden lagrar ingen personlig data.”</p>
+    </section>
+
+    <section class="card">
+      <h2>Om oss</h2>
+      <p>Idén till StödGuiden kommer från <strong>Nicholas Mwesigye</strong>, som såg behovet av en enkel digital väg in till stöd för <em>unga vuxna</em>. För att utveckla och stärka projektet valde han att ta med <strong>Victor Lindberg</strong> som partner. Tillsammans driver vi StödGuiden vidare med visionen att skapa en trygg, nationell tjänst för unga vuxna i hela Sverige.</p>
+    </section>
+
+    <section class="card contact">
+      <h2>Kontakt</h2>
+      <p><strong>E‑post:</strong> <a href="mailto:mwesigye10@hotmail.com">mwesigye10@hotmail.com</a><br>
+         <strong>Telefon:</strong> <a href="tel:0738911535">0738911535</a></p>
+      <div class="actions">
+        <a class="btn primary" href="mailto:mwesigye10@hotmail.com">Maila oss</a>
+        <a class="btn ghost" href="tel:0738911535">Ring oss</a>
+      </div>
+    </section>
+
+    <section class="card qrbox">
+      <h2>Skanna QR för att öppna prototypen</h2>
+      <img src="data:image/png;base64,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ico41VPUd1TUPmwRVqMAITIKECKjACEyChAiowAhMgoQIqMAITIKECKjACGJ7sWUraiZn/xmJNLcmSrNiZGi5PfIKePuQ9lG2qPOahQgREYBQmQUIERGAUJkFCBERgFCZBQgREYBQmQUIKSUezFlK+M+MEXdG9nS3HsqP2XcLyvNezKbKSYA/oSMAoTIKECIjAKEyChAiIwChMgoQIiMAoTIKEBIYVNMI00Z55TKOOGW5vRUGSfrshU105XmI9ZqFCBERgFCZBQgREYBQmQUIERGAUJkFCBERgFCZBQgZN+iDlzGPWSy5TdBUdR+SkVNjETmdvKbCMoWuTfSnBYragKqjHOVVqMAITIKECKjACEyChAiowAhMgoQIqMAITIKECKjACGFTTFlS3OSIc3JqzR3xclPfjNO+R23jDtEFXXcNH/LslmNAoTIKECIjAKEyChAiIwChMgoQIiMAoTIKECIjAKEJDrFlC2/OYc09xcq6pqLup/T3G0pP2X8CWbLb2eqNH+CVqMAITIKECKjACEyChAiowAhMgoQIqMAITIKECKjACGlnGJqPvnt85PfPEmEPZEapaj9lPKbrUpzH7ZsVqMAITIKECKjACEyChAiowAhMgoQIqMAITIKECKjACGmmIZJUZNIae7yFFHGWaPmm9vJTxl/vlajACEyChAiowAhMgoQIqMAITIKECKjACEyChAiowAhpZxiKuPUR1ETQfndV2nOVkWOm9/PyK5WtV+2jKxGAUJkFCBERgFCZBQgREYBQmQUIERGAUJkFCBERgFCEp1iKuN+LGVU1P0cmYHJb0KmqBmnombYivp+I9Kcj7IaBQiRUYAQGQUIkVGAEBkFCJFRgBAZBQiRUYAQGQUIaWm+fVEAhpPVKECIjAKEyChAiIwChMgoQIiMAoTIKECIjAKEyChAiIwChMgoQIiMAoTIKECIjAKEyChAiIwChMgoQIiMAoTIKECIjAKEyChAiIwChMgoQIiMAoTIKECIjAKEyChAiIwChMgoQIiMAoTIKECIjAKEyChAiIwChMgoQIiMAoTIKECIjAKEyChAyP8BxRaJfFXgOSQAAAAASUVORK5CYII=" alt="QR-kod till StödGuiden-prototypen" />
+      <p class="small">Öppnar: <a href="https://mwesigye10.github.io/st-dguiden/" target="_blank" rel="noopener">https://mwesigye10.github.io/st-dguiden/</a></p>
+    </section>
+
+    <footer class="footer">© 2025 StödGuiden – prototyp. Denna sida är fristående och kan brandas med kommunens profil.</footer>
+  </div>
+</body>
+</html>
